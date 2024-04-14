@@ -119,3 +119,17 @@ deleteButton.addEventListener('click', button => {
     calculator.delete();
 }
 );
+
+document.addEventListener('keydown', event => {
+    if ((event.key >= '0' && event.key <= '9') || event.key === '.') {
+        calculator.appendNumber(event.key);
+    } else if (['+', '-', '*', '/'].includes(event.key)) {
+        calculator.chooseOperation(event.key);
+    } else if (event.key === '=' || event.key === 'Enter') {
+        calculator.compute();
+    } else if (event.key === 'Backspace') {
+        calculator.delete();
+    } else if (event.key === 'Escape') {
+        calculator.clear(); // Call clear method when Escape key is pressed
+    }
+});
