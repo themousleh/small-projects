@@ -27,24 +27,31 @@ This project is a simple calculator implemented using HTML, CSS, and JavaScript.
 
 ---
 
-## Passport Login System with Express.js (Ongoing)
+## Passport Login System with Express.js and EJS
 
 ### Overview
-This ongoing project aims to create a simple user login system using Express.js. It will allow users to register and log in securely, managing their sessions and ensuring protected routes.
+User authentication and login are crucial features for many websites. This project focuses on building a secure user login system using Express.js and EJS (Embedded JavaScript) for templating. Express.js provides the server-side framework, while EJS helps in generating dynamic HTML pages with embedded JavaScript code.
+
+### Project Structure
+- `server.js`: Main file to configure and start the Express.js server.
+- `views/`: Directory containing EJS templates (`index.ejs`, `login.ejs`, `register.ejs`).
 
 ### Technologies Used
 - **Node.js**: JavaScript runtime for building the server-side application.
 - **Express.js**: Web framework for Node.js to create server-side functionality.
-- **Passport.js**: Middleware for authentication in Node.js applications.
+- **EJS (Embedded JavaScript)**: Templating language for generating HTML with embedded JavaScript.
 
 ### Setup and Usage
-*Details will be provided once the project structure is finalized.*
+1. Clone this repository to your local machine.
+2. Install the necessary dependencies using `npm install`.
+3. Start the server using `node server.js`.
+4. Access the application via `http://localhost:3000`.
 
 ### Future Enhancements
 - Implement additional authentication strategies (e.g., OAuth, JWT).
 - Add user profile management and password reset functionality.
 - Enhance security measures with rate limiting and account lockout policies.
-- Create a frontend using a modern framework (e.g., React, Angular, Vue).
+- Integrate frontend frameworks (e.g., React, Angular) for a more interactive user experience.
 
 ---
 
